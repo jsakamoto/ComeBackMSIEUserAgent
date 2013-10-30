@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <system.web>
+    <httpModules>
+      <add name="ComeBackMSIEUserAgent" type="Toolbelt.Web.ComeBackMSIEUserAgentModule, ComeBackMSIEUserAgent" />
+    </httpModules>
+  </system.web>
+  <system.webServer>
+    <validation validateIntegratedModeConfiguration="false"/>
+    <modules>
+      <add name="ComeBackMSIEUserAgent" type="Toolbelt.Web.ComeBackMSIEUserAgentModule, ComeBackMSIEUserAgent" preCondition="integratedMode" />
+    </modules>
+  </system.webServer>
+</configuration>

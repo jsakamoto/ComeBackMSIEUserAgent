@@ -1,0 +1,36 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>Comeback MSIE User Agent - IE11 or higher</title>
+    <authors>J.Sakamoto</authors>
+    <owners>J.Sakamoto</owners>
+    <licenseUrl>http://www.codeproject.com/info/cpol10.aspx</licenseUrl>
+    <projectUrl>https://github.com/jsakamoto/ComeBackMSIEUserAgent</projectUrl>
+    <!--
+    <iconUrl/>
+    -->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>AspNet,asp.net,aspnetwebpages,ie11,useragent,HTTP_USER_AGENT</tags>
+    <summary>
+    Add the "MSIE 11.0;" string to the user agent string at the request from IE11+.
+    / IE11+からの要求時、"MSIE11.0;" の文字列を、ユーザーエージェント文字列に追加します。
+    </summary>
+    <description>
+    After install this ASP.NET HTTP module, the web application (even if PHP) receive
+    the modified user agent string that is legacy "MSIE 11.0" style when accessing from IE11 or higher.
+    / この ASP.NET HTTP モジュールをインストールすると、IE11
+    ないしはそれ以降のバージョンからのアクセス時、その Web アプリ（PHPであっても）は旧来の "MSIE 11.0"
+    形式に変更されたユーザーエージェント文字列を受け取るようになります。
+    </description>
+    <releaseNotes>
+      <![CDATA[
+      v.1.0.0 - First release.
+      ]]>
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="web.config.transform" target="Content\web.config.transform" />
+  </files>
+</package>
